@@ -7,7 +7,7 @@ imax = 20;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-t_roots = zeros(1,imax);
+t_roots = zeros(imax,1);
 
 t_roots(1) = x0;
 
@@ -19,7 +19,7 @@ for p = 1:length(t_roots)-1
     endif
   endif
   t_roots(p+1)=t_roots(p) - (func(t_roots(p)/func_d(t_roots(p))));
-endfor
+  endfor
 t=t_roots(p)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
