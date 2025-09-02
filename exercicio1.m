@@ -18,7 +18,7 @@ for p = 1:length(t_roots)-1
       break
     endif
   endif
-  t_roots(p+1)=t_roots(p) - (func(t_roots(p)/func_d(t_roots(p))));
+  t_roots(p+1)=t_roots(p) - (func(t_roots(p)/func_d(t_roots(p));
   endfor
 t=t_roots(p)
 
